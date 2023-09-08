@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "0f522e3a-7abf-4526-b686-aaa7198388e6",
+		"name": "6desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28845448"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/64e7fa6ab1c2bfec5c0e08c6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"64e7fa6ab1c2bfec5c0e08c6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Macarons Premium\",\r\n    \"description\": \"Un producto que fue un gran desafio para DOMENICA. Orgullosos de este producto lo presentamos y te contamos que vos podes elegir la cantidad y los colores. Ideales para un regalo o para comer despues de la cena con un cafe.\",\r\n    \"code\": \"Producto6Premium\",\r\n    \"price\": 3000,\r\n    \"stock\": 15,\r\n    \"category\": \"dulce\",\r\n    \"thumbnail\": [\"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hola.com%2Fcocina%2Fnoticiaslibros%2F20200529168994%2Fmacarons-recetas%2F&psig=AOvVaw0ekLpObEvaUrsekn5xUvTx&ust=1693263927275000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDwpun5_YADFQAAAAAdAAAAABAH\"]\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Macarons\",\r\n    \"description\": \"Un producto que fue un gran desafio para DOMENICA. Orgullosos de este producto lo presentamos y te contamos que vos podes elegir la cantidad y los colores. Ideales para un regalo o para comer despues de la cena con un cafe.\",\r\n    \"code\": \"Producto6\",\r\n    \"price\": 9000,\r\n    \"stock\": 60,\r\n    \"category\": \"dulce\",\r\n    \"thumbnail\": [\"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hola.com%2Fcocina%2Fnoticiaslibros%2F20200529168994%2Fmacarons-recetas%2F&psig=AOvVaw0ekLpObEvaUrsekn5xUvTx&ust=1693263927275000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDwpun5_YADFQAAAAAdAAAAABAH\"]\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/64ebd6cc9941b18eadcd0591",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"64ebd6cc9941b18eadcd0591"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/64ebe23b7cbc2621e452ce5f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"64ebe23b7cbc2621e452ce5f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "New cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carts/64fa650ebd0b7026f36fdd4d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"64fa650ebd0b7026f36fdd4d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product to Cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts/64fa650ebd0b7026f36fdd4d/products/64e7ef029f2250fd8c2008eb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"64fa650ebd0b7026f36fdd4d",
+								"products",
+								"64e7ef029f2250fd8c2008eb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Products",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\":[\r\n        {\"product\":\"64e7ef029f2250fd8c2008eb\", \"quantity\": 2}, {\"product\":\"64e7fa6ab1c2bfec5c0e08c6\", \"quantity\": 3}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts/64fa650ebd0b7026f36fdd4d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"64fa650ebd0b7026f36fdd4d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update quantity",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\":20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts/64fa650ebd0b7026f36fdd4d/products/64e7ef029f2250fd8c2008eb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"64fa650ebd0b7026f36fdd4d",
+								"products",
+								"64e7ef029f2250fd8c2008eb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product from Cart",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carts/64ebdcb6ed6bbc59ecdb1123/products/64e7ef029f2250fd8c2008eb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"64ebdcb6ed6bbc59ecdb1123",
+								"products",
+								"64e7ef029f2250fd8c2008eb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product from Cart total",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts/64ebdcb6ed6bbc59ecdb1123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"64ebdcb6ed6bbc59ecdb1123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
